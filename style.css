@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0,0,0,0.3);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro {
+    margin: 30px 0;
+    font-size: 1.1em;
+}
+
+.chapter-btn {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    background: #fff;
+    color: #764ba2;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.chapter-btn:hover {
+    transform: scale(1.05);
+    background: #ffd700;
+}
+
+.chapter-btn.locked {
+    background: #555;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.download {
+    margin-top: 40px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #28a745;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background: #218838;
+}
+
+/* النافذة ديال الدفع */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+    background-color: #fff;
+    color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.close {
+    color: #aaa;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
